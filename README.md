@@ -37,8 +37,8 @@ A full stack React and Redux boilerplate built on top of Express and MongoDB. In
   
   _Returns:_
   ```
-  success,
-  token
+    success,
+    token
   ```
 - /auth/signup
 
@@ -144,7 +144,7 @@ Containing all the Express and Mongo files including routes, models and the serv
 
 - __routes__ contains the express routes for handling communication between the server and the client
 
-- __public__ contains the assets and index.html for the applications front-end
+- __public__ contains the assets for the applications front-end
 
 - __utils__ contains back-end utility functions for modularization
 
