@@ -1,0 +1,67 @@
+{
+  "name": "ReactReduxStarterKit",
+  "version": "1.0.0",
+  "description": "An online recipe book",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run server:prod",
+    "server:dev": "nodemon --watch server --exec babel-node -- server/index.dev.js",
+    "server:prod": "nodemon --watch server --exec babel-node -- server/index.prod.js",
+    "build": "NODE_ENV=production webpack -p --progress --config ./webpack.config.prod.js",
+    "test": "mocha ./client/tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkd705/react-redux-starter.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "redux-saga",
+    "starter",
+    "boilerplate"
+  ],
+  "author": "bkd705",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkd705/react-redux-starter/issues"
+  },
+  "homepage": "https://github.com/bkd705/react-redux-starter#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.15.2",
+    "classnames": "^2.2.5",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.2.1",
+    "jwt-decode": "^2.1.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.7.6",
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.30.5",
+    "react-dom": "^15.3.2",
+    "react-redux": "^5.0.1",
+    "react-router": "^2.8.1",
+    "react-tagsinput": "^3.14.0",
+    "redux": "^3.6.0",
+    "redux-saga": "^0.14.1",
+    "validator": "^6.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.7.1",
+    "mocha": "^3.1.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.15.0"
+  }
+}
