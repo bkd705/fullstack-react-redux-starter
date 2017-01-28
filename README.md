@@ -114,6 +114,7 @@ client
   - layouts
   - pages
   - redux
+  - tests
   - utils
 server
   - models
@@ -134,6 +135,8 @@ Containing all the react files from components, to pages, to the redux & redux-s
 - __pages__ contains each seperate container for the components
 
 - __redux__ contains all the redux files needed including actions, reducers, and then redux-saga sagas
+
+- __tests__ contains all the tests run by mocha as per the test script
 
 - __utils__ contains utility files such as authUtils and api. Mostly abstractions to keep code clean and modular.
 

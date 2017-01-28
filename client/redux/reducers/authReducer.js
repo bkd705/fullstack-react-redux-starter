@@ -14,7 +14,8 @@ const initialState = {
 export default function auth(state = initialState, action = {}) {
   switch(action.type) {
     case types.LOGIN_SUCCESS:
-      const decoded = jwtDecode(action.response.token)._doc
+      const decoded = jwtDecode(action.response.token)
+      console.log(decoded)
       localStorage.setItem('userToken', action.response.token)
       return {
         user: {

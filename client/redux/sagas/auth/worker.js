@@ -6,6 +6,7 @@ import * as api from '../../../utils/api'
 export function* asyncLogin(action) {
   try {
     const response = yield call(axios.post, api.login, action.user)
+    console.log(response)
     yield put({ type: types.LOGIN_SUCCESS, response: response.data})
   } catch(err) {
     yield put({ type: types.LOGIN_FAILURE, error: err.message })

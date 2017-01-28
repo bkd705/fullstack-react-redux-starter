@@ -8,7 +8,7 @@
     "server:dev": "nodemon --watch server --exec babel-node -- server/index.dev.js",
     "server:prod": "nodemon --watch server --exec babel-node -- server/index.prod.js",
     "build": "NODE_ENV=production webpack -p --progress --config ./webpack.config.prod.js",
-    "test": "mocha ./client/tests"
+    "test": "mocha './client/**/*.test.js' --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -29,9 +29,12 @@
   "homepage": "https://github.com/bkd705/react-redux-starter#readme",
   "dependencies": {
     "axios": "^0.15.3",
+    "babel-register": "^6.18.0",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
     "classnames": "^2.2.5",
+    "enzyme": "^2.7.0",
     "express": "^4.14.0",
     "jsonwebtoken": "^7.2.1",
     "jwt-decode": "^2.1.0",
@@ -58,7 +61,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
     "eslint": "^3.7.1",
-    "mocha": "^3.1.0",
+    "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.2.0",
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.9.0",
